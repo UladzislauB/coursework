@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>439</width>
-    <height>289</height>
+    <width>482</width>
+    <height>410</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -60,6 +60,11 @@ color: steelblue;
       <layout class="QGridLayout" name="gridLayout_2">
        <item row="0" column="0">
         <widget class="QLabel" name="label_series">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+	color:	#535353;
+}</string>
+         </property>
          <property name="text">
           <string>Series</string>
          </property>
@@ -75,14 +80,19 @@ color: steelblue;
          </property>
         </widget>
        </item>
-       <item row="0" column="2" colspan="2">
+       <item row="0" column="2">
         <widget class="QLabel" name="label_number">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+	color:	#535353;
+}</string>
+         </property>
          <property name="text">
           <string>Number</string>
          </property>
         </widget>
        </item>
-       <item row="0" column="5">
+       <item row="0" column="4">
         <widget class="QLineEdit" name="edit_number"/>
        </item>
        <item row="1" column="0" colspan="3">
@@ -97,17 +107,19 @@ color: steelblue;
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">font-seize: 10px</string>
+          <string notr="true">QLabel{
+	color:	#535353;
+}font-seize: 10px</string>
          </property>
          <property name="text">
           <string>Identification number</string>
          </property>
         </widget>
        </item>
-       <item row="1" column="3" colspan="3">
+       <item row="1" column="3" colspan="2">
         <widget class="QLineEdit" name="edit_identification_number"/>
        </item>
-       <item row="2" column="0" colspan="5">
+       <item row="2" column="0" colspan="4">
         <widget class="QFrame" name="frame_2">
          <property name="frameShape">
           <enum>QFrame::StyledPanel</enum>
@@ -116,13 +128,9 @@ color: steelblue;
           <enum>QFrame::Raised</enum>
          </property>
          <layout class="QGridLayout" name="gridLayout">
-          <item row="0" column="0">
-           <widget class="QLabel" name="label_gender">
-            <property name="text">
-             <string>Choose gender</string>
-            </property>
-           </widget>
-          </item>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
           <item row="1" column="0">
            <widget class="QRadioButton" name="rbtn_male">
             <property name="text">
@@ -140,28 +148,83 @@ color: steelblue;
             </property>
            </widget>
           </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_gender">
+            <property name="styleSheet">
+             <string notr="true">QLabel{
+	color:	#535353;
+}</string>
+            </property>
+            <property name="text">
+             <string>Choose gender</string>
+            </property>
+           </widget>
+          </item>
          </layout>
         </widget>
        </item>
-       <item row="3" column="0" colspan="2">
+       <item row="3" column="0" colspan="3">
+        <widget class="QLabel" name="label_birth_date">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+	color:	#535353;
+}</string>
+         </property>
+         <property name="text">
+          <string>Date of birth</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="4">
+        <widget class="QDateEdit" name="edit_birth_date">
+         <property name="styleSheet">
+          <string notr="true">QDateEdit{
+	color:	black;
+}</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0" colspan="2">
         <widget class="QLabel" name="label_issue_date">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+	color:	#535353;
+}</string>
+         </property>
          <property name="text">
           <string>Date of issue</string>
          </property>
         </widget>
        </item>
-       <item row="3" column="4" colspan="2">
-        <widget class="QDateEdit" name="edit_issue_date"/>
+       <item row="4" column="4">
+        <widget class="QDateEdit" name="edit_issue_date">
+         <property name="styleSheet">
+          <string notr="true">QDateEdit{
+	color:	black;
+}</string>
+         </property>
+        </widget>
        </item>
-       <item row="4" column="0" colspan="3">
+       <item row="5" column="0" colspan="3">
         <widget class="QLabel" name="label_expiration_date">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+	color:	#535353;
+}</string>
+         </property>
          <property name="text">
           <string>Date of expiration</string>
          </property>
         </widget>
        </item>
-       <item row="4" column="4" colspan="2">
-        <widget class="QDateEdit" name="edit_expiration_date"/>
+       <item row="5" column="4">
+        <widget class="QDateEdit" name="edit_expiration_date">
+         <property name="styleSheet">
+          <string notr="true">QDateEdit{
+	color:	black;
+}</string>
+         </property>
+        </widget>
        </item>
       </layout>
      </widget>
@@ -175,7 +238,12 @@ color: steelblue;
        </size>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">QPushButton{
+color: #1db954;
+background: 	#121212;
+border-radius: 60px;
+font: 12pt &quot;Comic Sans MS&quot;;
+}</string>
       </property>
       <property name="text">
        <string>Add</string>

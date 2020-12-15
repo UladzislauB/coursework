@@ -18,15 +18,6 @@ class RegisterForm(QtWidgets.QMainWindow, Ui_RegisterWindow):
         self.error_from = None
         self.login_form = None
         self.btn_register.clicked.connect(self.on_register)
-        self.rbtn_driver.clicked.connect(self.set_driver_img)
-        self.rbtn_client.clicked.connect(self.set_client_img)
-        self.set_client_img()
-
-    def set_driver_img(self):
-        self.img.setPixmap(QPixmap(os.path.abspath("ico/driver.png")))
-
-    def set_client_img(self):
-        self.img.setPixmap(QPixmap(os.path.abspath("ico/passenger.png")))
 
     def get_user_type(self):
         if self.rbtn_client.isChecked():

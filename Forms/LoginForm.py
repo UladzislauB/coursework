@@ -14,7 +14,6 @@ class LoginWindow(QtWidgets.QMainWindow, Ui_LoginWindow):
     def __init__(self, db):
         QtWidgets.QMainWindow.__init__(self)
         self.setupUi(self)
-        self.img.setPixmap(QPixmap(os.path.abspath("ico/taxi.png")))
         self.db = db
         self.profile_form = None
         self.error_from = None

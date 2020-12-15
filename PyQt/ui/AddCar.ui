@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>290</width>
-    <height>320</height>
+    <width>506</width>
+    <height>364</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -25,8 +25,8 @@
       </property>
       <property name="maximumSize">
        <size>
-        <width>272</width>
-        <height>231</height>
+        <width>472</width>
+        <height>431</height>
        </size>
       </property>
       <property name="styleSheet">
@@ -66,34 +66,7 @@ QLabel{
        <enum>QFrame::Raised</enum>
       </property>
       <layout class="QGridLayout" name="gridLayout">
-       <item row="1" column="2">
-        <widget class="QLineEdit" name="edit_model">
-         <property name="styleSheet">
-          <string notr="true"/>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="2">
-        <widget class="QLineEdit" name="edit_number">
-         <property name="text">
-          <string/>
-         </property>
-         <property name="echoMode">
-          <enum>QLineEdit::Normal</enum>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="0" colspan="2">
-        <widget class="QLabel" name="label_number">
-         <property name="text">
-          <string>Number</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="0">
+       <item row="2" column="0">
         <widget class="QLabel" name="label_model">
          <property name="font">
           <font>
@@ -105,29 +78,165 @@ QLabel{
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true"/>
+          <string notr="true">QLabel{
+	color:	#535353;
+}</string>
          </property>
          <property name="text">
           <string>Model</string>
          </property>
         </widget>
        </item>
-       <item row="0" column="1" colspan="2">
-        <widget class="QLabel" name="img">
-         <property name="maximumSize">
-          <size>
-           <width>125</width>
-           <height>125</height>
-          </size>
+       <item row="2" column="1" colspan="3">
+        <widget class="QLineEdit" name="edit_model">
+         <property name="styleSheet">
+          <string notr="true"/>
          </property>
          <property name="text">
           <string/>
          </property>
-         <property name="pixmap">
-          <pixmap>../../ico/car.png</pixmap>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_number">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+	color:	#535353;
+}</string>
          </property>
-         <property name="scaledContents">
-          <bool>true</bool>
+         <property name="text">
+          <string>Number</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1" colspan="3">
+        <widget class="QLineEdit" name="edit_number">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="echoMode">
+          <enum>QLineEdit::Normal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_type">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+	color:	#535353;
+}</string>
+         </property>
+         <property name="text">
+          <string>Select type</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1" colspan="2">
+        <widget class="QComboBox" name="comboBox_type">
+         <property name="maximumSize">
+          <size>
+           <width>500</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_issue_year">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+	color:	#535353;
+}</string>
+         </property>
+         <property name="text">
+          <string>Year of issue</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1" colspan="2">
+        <widget class="QLineEdit" name="edit_issue_year">
+         <property name="maximumSize">
+          <size>
+           <width>70</width>
+           <height>16777215</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_color">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+	color:	#535353;
+}</string>
+         </property>
+         <property name="text">
+          <string>Color</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1" colspan="2">
+        <widget class="QLineEdit" name="edit_color">
+         <property name="maximumSize">
+          <size>
+           <width>70</width>
+           <height>16777215</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0" colspan="2">
+        <widget class="QLabel" name="label_producer">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+	color:	#535353;
+}</string>
+         </property>
+         <property name="text">
+          <string>Select producer</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QPushButton" name="btn_add_producer">
+         <property name="minimumSize">
+          <size>
+           <width>50</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+color: #1db954;
+background: 	#121212;
+border-radius: 60px;
+font: 12pt &quot;Comic Sans MS&quot;;
+}</string>
+         </property>
+         <property name="text">
+          <string>Add</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QComboBox" name="comboBox_producer">
+         <property name="maximumSize">
+          <size>
+           <width>500</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
          </property>
         </widget>
        </item>
@@ -144,8 +253,8 @@ QLabel{
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton{
-color: white;
-background: steelblue;
+color: #1db954;
+background: 	#121212;
 border-radius: 60px;
 font: 12pt &quot;Comic Sans MS&quot;;
 }</string>

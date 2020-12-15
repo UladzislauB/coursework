@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>290</width>
-    <height>493</height>
+    <width>417</width>
+    <height>486</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -49,7 +49,7 @@ font: 12pt &quot;Comic Sans MS&quot;;
       </property>
       <property name="maximumSize">
        <size>
-        <width>272</width>
+        <width>472</width>
         <height>231</height>
        </size>
       </property>
@@ -63,26 +63,10 @@ font: 12pt &quot;Comic Sans MS&quot;;
        <enum>QFrame::Raised</enum>
       </property>
       <layout class="QGridLayout" name="gridLayout">
-       <item row="0" column="1" colspan="2">
-        <widget class="QLabel" name="img">
-         <property name="maximumSize">
-          <size>
-           <width>150</width>
-           <height>150</height>
-          </size>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-         <property name="pixmap">
-          <pixmap>../../ico/passenger.png</pixmap>
-         </property>
-         <property name="scaledContents">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="0">
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <item row="0" column="0">
         <widget class="QLabel" name="label_login">
          <property name="font">
           <font>
@@ -94,7 +78,9 @@ font: 12pt &quot;Comic Sans MS&quot;;
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true"/>
+          <string notr="true">QLabel{
+	color:	#535353;
+}</string>
          </property>
          <property name="text">
           <string>Login</string>
@@ -102,23 +88,6 @@ font: 12pt &quot;Comic Sans MS&quot;;
         </widget>
        </item>
        <item row="1" column="2">
-        <widget class="QLineEdit" name="edit_login">
-         <property name="styleSheet">
-          <string notr="true"/>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="0" colspan="2">
-        <widget class="QLabel" name="label">
-         <property name="text">
-          <string>Password</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="2">
         <widget class="QLineEdit" name="edit_password">
          <property name="text">
           <string/>
@@ -128,39 +97,172 @@ font: 12pt &quot;Comic Sans MS&quot;;
          </property>
         </widget>
        </item>
+       <item row="1" column="0" colspan="2">
+        <widget class="QLabel" name="label">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+	color:	#535353;
+}</string>
+         </property>
+         <property name="text">
+          <string>Password</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLineEdit" name="edit_login">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0" colspan="3">
+        <widget class="QFrame" name="frame_2">
+         <property name="maximumSize">
+          <size>
+           <width>388</width>
+           <height>119</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_patronymic">
+            <property name="font">
+             <font>
+              <family>Comic Sans MS</family>
+              <pointsize>15</pointsize>
+              <weight>75</weight>
+              <italic>false</italic>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel{
+	color:	#535353;
+}</string>
+            </property>
+            <property name="text">
+             <string>MiddleName</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="edit_lastname">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="edit_patronymic">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="edit_firstname">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_lastname">
+            <property name="font">
+             <font>
+              <family>Comic Sans MS</family>
+              <pointsize>15</pointsize>
+              <weight>75</weight>
+              <italic>false</italic>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel{
+	color:	#535353;
+}</string>
+            </property>
+            <property name="text">
+             <string>LastName</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_firstname">
+            <property name="font">
+             <font>
+              <family>Comic Sans MS</family>
+              <pointsize>15</pointsize>
+              <weight>75</weight>
+              <italic>false</italic>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel{
+	color:	#535353;
+}</string>
+            </property>
+            <property name="text">
+             <string>FirsName</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
       </layout>
      </widget>
     </item>
     <item>
-     <widget class="QFrame" name="frame_2">
-      <property name="maximumSize">
-       <size>
-        <width>288</width>
-        <height>119</height>
-       </size>
-      </property>
-      <property name="styleSheet">
-       <string notr="true"/>
-      </property>
+     <widget class="QFrame" name="frame_4">
       <property name="frameShape">
        <enum>QFrame::StyledPanel</enum>
       </property>
-      <property name="frameShadow">
-       <enum>QFrame::Raised</enum>
-      </property>
-      <layout class="QGridLayout" name="gridLayout_2">
-       <item row="1" column="1">
-        <widget class="QLineEdit" name="edit_lastname">
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="4" column="1">
+        <widget class="ClickableLineEdit" name="edit_contacts">
          <property name="styleSheet">
           <string notr="true"/>
          </property>
          <property name="text">
-          <string/>
+          <string>+375122456798</string>
+         </property>
+         <property name="readOnly">
+          <bool>false</bool>
          </property>
         </widget>
        </item>
-       <item row="1" column="0">
-        <widget class="QLabel" name="label_lastname">
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_contacts">
          <property name="font">
           <font>
            <family>Comic Sans MS</family>
@@ -171,44 +273,30 @@ font: 12pt &quot;Comic Sans MS&quot;;
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true"/>
+          <string notr="true">QLabel{
+	color:	#535353;
+}</string>
          </property>
          <property name="text">
-          <string>LastName</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="0">
-        <widget class="QLabel" name="label_patronymic">
-         <property name="font">
-          <font>
-           <family>Comic Sans MS</family>
-           <pointsize>15</pointsize>
-           <weight>75</weight>
-           <italic>false</italic>
-           <bold>true</bold>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true"/>
-         </property>
-         <property name="text">
-          <string>Patronymic</string>
+          <string>Contacts</string>
          </property>
         </widget>
        </item>
        <item row="0" column="1">
-        <widget class="QLineEdit" name="edit_firstname">
+        <widget class="ClickableLineEdit" name="edit_address">
          <property name="styleSheet">
           <string notr="true"/>
          </property>
          <property name="text">
-          <string/>
+          <string>ул. Гуляева д.13 кв.19</string>
+         </property>
+         <property name="readOnly">
+          <bool>false</bool>
          </property>
         </widget>
        </item>
        <item row="0" column="0">
-        <widget class="QLabel" name="label_firstname">
+        <widget class="QLabel" name="label_address">
          <property name="font">
           <font>
            <family>Comic Sans MS</family>
@@ -219,20 +307,12 @@ font: 12pt &quot;Comic Sans MS&quot;;
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true"/>
+          <string notr="true">QLabel{
+	color:	#535353;
+}</string>
          </property>
          <property name="text">
-          <string>FirsName</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="1">
-        <widget class="QLineEdit" name="edit_patronymic">
-         <property name="styleSheet">
-          <string notr="true"/>
-         </property>
-         <property name="text">
-          <string/>
+          <string>Address</string>
          </property>
         </widget>
        </item>
@@ -243,7 +323,7 @@ font: 12pt &quot;Comic Sans MS&quot;;
      <widget class="QFrame" name="frame_3">
       <property name="maximumSize">
        <size>
-        <width>281</width>
+        <width>481</width>
         <height>66</height>
        </size>
       </property>
@@ -256,15 +336,14 @@ font: 12pt &quot;Comic Sans MS&quot;;
       <property name="frameShadow">
        <enum>QFrame::Raised</enum>
       </property>
-      <layout class="QGridLayout" name="gridLayout_3">
-       <item row="1" column="1">
-        <widget class="QRadioButton" name="rbtn_driver">
-         <property name="text">
-          <string>Driver</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <item>
         <widget class="QRadioButton" name="rbtn_client">
          <property name="text">
           <string>Client</string>
@@ -274,22 +353,31 @@ font: 12pt &quot;Comic Sans MS&quot;;
          </property>
         </widget>
        </item>
-       <item row="0" column="0" colspan="2">
-        <widget class="QLabel" name="label_1">
-         <property name="font">
-          <font>
-           <family>Comic Sans MS</family>
-           <pointsize>15</pointsize>
-           <weight>75</weight>
-           <italic>false</italic>
-           <bold>true</bold>
-          </font>
+       <item>
+        <widget class="QRadioButton" name="rbtn_driver">
+         <property name="text">
+          <string>Driver</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_passpot">
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>41</height>
+          </size>
          </property>
          <property name="styleSheet">
-          <string notr="true"/>
+          <string notr="true">QPushButton{
+color: #1db954;
+background: 	#121212;
+border-radius: 60px;
+font: 12pt &quot;Comic Sans MS&quot;;
+}</string>
          </property>
          <property name="text">
-          <string>Select Type</string>
+          <string>Passport</string>
          </property>
         </widget>
        </item>
@@ -305,7 +393,12 @@ font: 12pt &quot;Comic Sans MS&quot;;
        </size>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">QPushButton{
+color: #1db954;
+background: 	#121212;
+border-radius: 60px;
+font: 12pt &quot;Comic Sans MS&quot;;
+}</string>
       </property>
       <property name="text">
        <string>Register</string>
@@ -315,6 +408,13 @@ font: 12pt &quot;Comic Sans MS&quot;;
    </layout>
   </widget>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ClickableLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>PyQt.mycomponent.clickablelineedit.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

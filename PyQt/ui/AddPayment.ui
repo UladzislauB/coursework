@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>338</width>
-    <height>497</height>
+    <width>384</width>
+    <height>338</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -53,20 +53,67 @@ color: steelblue;
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="4" column="0" colspan="2" alignment="Qt::AlignHCenter">
-     <widget class="QPushButton" name="btn_add">
-      <property name="minimumSize">
-       <size>
-        <width>130</width>
-        <height>40</height>
-       </size>
+    <item row="0" column="0" colspan="2">
+     <widget class="QFrame" name="frame">
+      <property name="styleSheet">
+       <string notr="true"/>
       </property>
-      <property name="text">
-       <string>Add</string>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
       </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="label_card_number">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+	color:	#535353;
+}</string>
+         </property>
+         <property name="text">
+          <string>Card Number</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="edit_card_number"/>
+       </item>
+      </layout>
      </widget>
     </item>
-    <item row="3" column="0">
+    <item row="1" column="0" colspan="2">
+     <widget class="QFrame" name="frame_4">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_card_holder">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+	color:	#535353;
+}</string>
+         </property>
+         <property name="text">
+          <string>Card holder</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="edit_card_holder"/>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="2" column="0">
      <widget class="QFrame" name="frame_2">
       <property name="styleSheet">
        <string notr="true"/>
@@ -80,6 +127,11 @@ color: steelblue;
       <layout class="QVBoxLayout" name="verticalLayout_3">
        <item>
         <widget class="QLabel" name="label_expiration_date">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+	color:	#535353;
+}</string>
+         </property>
          <property name="text">
           <string>Expiration date</string>
          </property>
@@ -87,6 +139,11 @@ color: steelblue;
        </item>
        <item>
         <widget class="QDateEdit" name="dateEdit_expiration_date">
+         <property name="styleSheet">
+          <string notr="true">QDateEdit{
+	color:	black;
+}</string>
+         </property>
          <property name="dateTime">
           <datetime>
            <hour>0</hour>
@@ -105,7 +162,7 @@ color: steelblue;
       </layout>
      </widget>
     </item>
-    <item row="3" column="1">
+    <item row="2" column="1">
      <widget class="QFrame" name="frame_3">
       <property name="maximumSize">
        <size>
@@ -125,6 +182,11 @@ color: steelblue;
       <layout class="QVBoxLayout" name="verticalLayout_4">
        <item>
         <widget class="QLabel" name="label_security_code">
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+	color:	#535353;
+}</string>
+         </property>
          <property name="text">
           <string>Security code</string>
          </property>
@@ -140,92 +202,28 @@ color: steelblue;
       </layout>
      </widget>
     </item>
-    <item row="2" column="0" colspan="2">
-     <widget class="QFrame" name="frame_4">
-      <property name="styleSheet">
-       <string notr="true"/>
-      </property>
-      <property name="frameShape">
-       <enum>QFrame::StyledPanel</enum>
-      </property>
-      <property name="frameShadow">
-       <enum>QFrame::Raised</enum>
-      </property>
-      <layout class="QVBoxLayout" name="verticalLayout_2">
-       <item>
-        <widget class="QLabel" name="label_card_holder">
-         <property name="text">
-          <string>Card holder</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="edit_card_holder"/>
-       </item>
-      </layout>
-     </widget>
-    </item>
-    <item row="0" column="0" colspan="2">
-     <widget class="QLabel" name="img_payment">
-      <property name="maximumSize">
+    <item row="3" column="0" colspan="2">
+     <widget class="QPushButton" name="btn_add">
+      <property name="minimumSize">
        <size>
-        <width>320</width>
-        <height>210</height>
+        <width>130</width>
+        <height>40</height>
        </size>
       </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>../../ico/card.png</pixmap>
-      </property>
-      <property name="scaledContents">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="0" colspan="2">
-     <widget class="QFrame" name="frame">
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">QPushButton{
+color: #1db954;
+background: 	#121212;
+border-radius: 60px;
+font: 12pt &quot;Comic Sans MS&quot;;
+}</string>
       </property>
-      <property name="frameShape">
-       <enum>QFrame::StyledPanel</enum>
+      <property name="text">
+       <string>Add</string>
       </property>
-      <property name="frameShadow">
-       <enum>QFrame::Raised</enum>
-      </property>
-      <layout class="QVBoxLayout" name="verticalLayout">
-       <item>
-        <widget class="QLabel" name="label_card_number">
-         <property name="text">
-          <string>Card Number</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="edit_card_number"/>
-       </item>
-      </layout>
      </widget>
     </item>
    </layout>
-   <widget class="QFrame" name="frame_5">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>0</y>
-      <width>280</width>
-      <height>79</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
-    </property>
-   </widget>
   </widget>
  </widget>
  <resources/>
